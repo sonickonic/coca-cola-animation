@@ -1,3 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.hero__title {
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.15rem;
+}
+.hero__description {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.1rem;
+  letter-spacing: 0.4px;
+}
+.hero__btn {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  letter-spacing: 1.5px;
+}
+.hero__title {
+  text-transform: capitalize;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(240.93deg, #292929 -0.37%, #1b1b1b 101.45%);
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 89rem;
+  height: 90rem;
+  background-image: linear-gradient(64.5deg, #292929 2.1%, #1b1b1b 100.55%);
+  box-shadow: 0px 2rem 3rem rgba(0, 0, 0, 0.15);
+  border-radius: 6rem;
+}
+.hero--vanilla {
+  color: #1b1b1b;
+  background: linear-gradient(66.37deg, #ece1c9 2.16%, #9f8c5c 103.37%);
+}
+.hero--cherry {
+  background: linear-gradient(66.37deg, #8f355a 2.16%, #5e2438 41.61%, #2c1316 103.37%);
+}
+.hero--orange-vanill {
+  background: linear-gradient(66.37deg, #f0ae54 2.16%, #8b481e 103.37%);
+}
+.hero__can {
+  z-index: 1;
+  position: absolute;
+}
+.hero__logo {
+  margin-bottom: 3rem;
+}
+.hero__text-container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 78rem;
+  bottom: 7rem;
+}
+.hero__title {
+  margin-bottom: 4rem;
+}
+.hero__description {
+  width: 21rem;
+}
+.hero__btn {
+  z-index: 1;
+  align-self: flex-end;
+}
+.hero__btn-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 
 /*# sourceMappingURL=style.css.map */

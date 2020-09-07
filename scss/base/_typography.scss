@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $color-white;
+}
+
+.hero {
+  &__title {
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.15rem;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.1rem;
+    letter-spacing: 0.4px;
+  }
+
+  &__btn {
+    color: $color-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    letter-spacing: 1.5px;
+  }
+
+  &__title {
+    text-transform: capitalize;
+  }
+}
