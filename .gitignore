@@ -1,0 +1,6 @@
+# Parcel related files
+dist/
+.cache/
+
+# Dependency directories
+node_modules/
