@@ -1,4 +1,5 @@
 import cans from "./cans";
+import { animationX, animationY } from "./animation";
 
 const can = document.querySelector(".hero__can");
 const title = document.querySelector(".hero__title");
@@ -30,5 +31,9 @@ const handleClick = () => {
 
 button.addEventListener("click", (e) => {
   e.preventDefault();
-  handleClick();
+  setTimeout(() => {
+    handleClick();
+  }, 300);
+  animationX.play();
+  animationY.play();
 });
