@@ -3,9 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 89rem;
-  height: 90rem;
-  border-radius: 6rem;
+  width: 70vw;
+  height: 90vh;
+  max-width: 89rem;
+  max-height: 90rem;
 
   &--vanilla {
     color: $color-black;
@@ -50,17 +51,22 @@
   }
 
   &__can {
-    z-index: 1;
+    max-width: 28rem;
+    z-index: 2;
     position: absolute;
   }
 
   &__logo-container {
+    z-index: 1;
     position: absolute;
     overflow: hidden;
     display: block;
   }
 
   &__logo {
+    width: 80vw;
+    max-width: 140rem;
+    height: 100%;
     margin-bottom: 3rem;
   }
 
@@ -68,8 +74,9 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    width: 78rem;
-    bottom: 7rem;
+    width: 85%;
+    max-width: 78rem;
+    bottom: 6%;
   }
 
   &__title {
@@ -86,8 +93,44 @@
 
     &-img {
       position: absolute;
-      bottom: 0;
       right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+@include screen-l {
+  .hero {
+    align-self: flex-end;
+    overflow-x: hidden;
+    flex-direction: column-reverse;
+    width: 100vw;
+    height: 100%;
+
+    &__background {
+      border-radius: 6rem 6rem 0 0;
+      height: 30rem;
+    }
+
+    &__logo-container {
+      margin-top: 5rem;
+      margin-bottom: -7rem;
+      position: relative;
+    }
+
+    &__can {
+      width: 50%;
+      margin-bottom: -10rem;
+      position: relative;
+    }
+
+    &__btn {
+      z-index: 1;
+      align-self: flex-end;
+
+      &-img {
+        max-width: 21rem;
+      }
     }
   }
 }

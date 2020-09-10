@@ -1,0 +1,5 @@
+@mixin screen-l {
+  @media (max-width: 812px) {
+    @content;
+  }
+}

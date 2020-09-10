@@ -47,7 +47,7 @@ body {
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(240.93deg, #292929 -0.37%, #1b1b1b 101.45%);
+  background-image: linear-gradient(240.93deg, #404040 -0.37%, #1b1b1b 101.45%);
 }
 
 .hero {
@@ -55,9 +55,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 89rem;
-  height: 90rem;
-  border-radius: 6rem;
+  width: 70vw;
+  height: 90vh;
+  max-width: 89rem;
+  max-height: 90rem;
 }
 .hero--vanilla {
   color: #1b1b1b;
@@ -66,7 +67,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 6rem;
-  background-image: linear-gradient(64.5deg, #292929 2.1%, #1b1b1b 100.55%);
+  background-image: linear-gradient(64.5deg, #404040 2.1%, #1b1b1b 100.55%);
   box-shadow: 0px 2rem 3rem rgba(0, 0, 0, 0.15);
 }
 .hero__background--vanilla {
@@ -80,23 +81,29 @@ body {
   background-image: linear-gradient(66.37deg, #f0ae54 2.16%, #8b481e 103.37%);
 }
 .hero__can {
-  z-index: 1;
+  max-width: 28rem;
+  z-index: 2;
   position: absolute;
 }
 .hero__logo-container {
+  z-index: 1;
   position: absolute;
   overflow: hidden;
   display: block;
 }
 .hero__logo {
+  width: 80vw;
+  max-width: 140rem;
+  height: 100%;
   margin-bottom: 3rem;
 }
 .hero__text-container {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  width: 78rem;
-  bottom: 7rem;
+  width: 85%;
+  max-width: 78rem;
+  bottom: 6%;
 }
 .hero__title {
   margin-bottom: 4rem;
@@ -110,8 +117,39 @@ body {
 }
 .hero__btn-img {
   position: absolute;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 812px) {
+  .hero {
+    align-self: flex-end;
+    overflow-x: hidden;
+    flex-direction: column-reverse;
+    width: 100vw;
+    height: 100%;
+  }
+  .hero__background {
+    border-radius: 6rem 6rem 0 0;
+    height: 30rem;
+  }
+  .hero__logo-container {
+    margin-top: 5rem;
+    margin-bottom: -7rem;
+    position: relative;
+  }
+  .hero__can {
+    width: 50%;
+    margin-bottom: -10rem;
+    position: relative;
+  }
+  .hero__btn {
+    z-index: 1;
+    align-self: flex-end;
+  }
+  .hero__btn-img {
+    max-width: 21rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
